@@ -44,7 +44,6 @@ public class GetListedNFTWebWallet : MonoBehaviour
     async void Start()
     {
         List<GetNftListModel.Response> response = await EVM.GetNftMarket(chain, network);
-        Debug.Log(response);
         price.text = response[0].price;
         seller.text = response[0].seller;
         Debug.Log("Seller: " + response[0].seller);
