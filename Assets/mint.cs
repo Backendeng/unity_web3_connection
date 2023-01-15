@@ -25,11 +25,13 @@ public class mint : MonoBehaviour
 
     string amount = "100000000000000000";
 
+    public string tokenID = "1";
+
     // call the "approve" function
     async public void Approve() {
     
         // spender
-        string spender = PlayerPrefs.GetString("Account");;
+        string spender = PlayerPrefs.GetString("Account");
        // function name
         string method = "approve";
        // put arguments in an array of string
@@ -58,7 +60,7 @@ public class mint : MonoBehaviour
     async public void Mint() {
     
         // amount to send
-        string tokenID = "1";
+        
         // function name
         string method = "mint";
         // put arguments in an array of string
