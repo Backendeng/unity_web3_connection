@@ -215,7 +215,6 @@ GameObject:
   - component: {fileID: 237507337}
   - component: {fileID: 237507336}
   - component: {fileID: 237507335}
-  - component: {fileID: 237507334}
   m_Layer: 5
   m_Name: Mint
   m_TagString: Untagged
@@ -244,19 +243,6 @@ RectTransform:
   m_AnchoredPosition: {x: 2, y: 67}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &237507334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 237507332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce4c6c6e04dc91641b3f4a9958271d34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  account: 
 --- !u!114 &237507335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,7 +286,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 237507336}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2028466946}
+        m_TargetAssemblyTypeName: mint, Assembly-CSharp
+        m_MethodName: Mint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &237507336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1379,7 +1377,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1540411764}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2028466946}
+        m_TargetAssemblyTypeName: mint, Assembly-CSharp
+        m_MethodName: Approve
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1540411764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1529,3 +1539,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   account: 
+  tokenID: 10
