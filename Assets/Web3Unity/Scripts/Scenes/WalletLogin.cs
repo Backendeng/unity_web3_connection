@@ -15,7 +15,8 @@ public class WalletLogin: MonoBehaviour
             if (PlayerPrefs.GetInt("RememberMe") == 1 && PlayerPrefs.GetString("Account") != "")
             {
                 // move to next scene
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                Debug.Log(PlayerPrefs.GetString("Account"));
             }
         }
     }
